@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabalho ODS HTML - ODS 7</title>
+  <meta
+    name="description"
+    content="Pagina estatica educativa sobre a ODS 7 da ONU: Energia Limpa e Acessivel."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteudo</a>
+
+  <header class="site-header" id="topo">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">ODS 7</span>
+        <span class="brand-text">Trabalho ODS HTML</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Abrir menu</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Menu principal">
+        <ul>
+          <li><a class="is-active" href="index.html">Pagina principal</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="#energias">Energias</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#integrantes">Integrantes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero reveal">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Projeto: Trabalho ODS HTML</p>
+          <h1>ODS 7: Energia Limpa e Acessivel para todos</h1>
+          <p class="hero-text">
+            Nosso grupo desenvolveu uma pagina informativa para explicar de forma simples o que e a ODS 7,
+            por que ela importa e como cada pessoa pode colaborar com um futuro energetico mais justo e sustentavel.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#sobre">Conhecer o tema</a>
+            <a class="btn btn-outline" href="sobre.html">Ver resumo completo</a>
+          </div>
+        </div>
+        <figure class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80"
+            alt="Painel solar com turbinas eolicas ao fundo"
+          />
+          <figcaption>Energia renovavel ajuda a reduzir impactos ambientais.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section reveal" id="sobre">
+      <div class="container">
+        <h2>Tema e objetivo da ODS 7</h2>
+        <div class="cards two">
+          <article class="card">
+            <h3>Tema</h3>
+            <p><strong>ODS 7 - Energia Limpa e Acessivel.</strong></p>
+            <p>
+              A ODS 7 busca garantir que toda a populacao tenha acesso a energia moderna, segura e com menor
+              impacto ambiental.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Objetivo</h3>
+            <p>
+              Ampliar o acesso a energia limpa, confiavel e acessivel para todos, com incentivo a fontes
+              renovaveis e uso eficiente da energia.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="problema">
+      <div class="container">
+        <h2>O problema</h2>
+        <p>
+          Muitas pessoas ainda nao conhecem bem as vantagens das energias renovaveis. Em varias regioes, o custo
+          inicial de tecnologias limpas e a falta de informacao dificultam a adocao dessas alternativas.
+        </p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="publico">
+      <div class="container">
+        <h2>Publico-alvo</h2>
+        <div class="cards three">
+          <article class="card"><h3>Estudantes</h3><p>Para formar consciencia ambiental desde cedo.</p></article>
+          <article class="card"><h3>Familias</h3><p>Para incentivar economia de energia no dia a dia.</p></article>
+          <article class="card"><h3>Comunidade local</h3><p>Para apoiar praticas sustentaveis no bairro e na escola.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="solucao">
+      <div class="container">
+        <h2>Detalhamento da solucao inicial proposta</h2>
+        <p>
+          Nossa solucao e uma pagina web estatica, com linguagem simples e visual atrativo, para explicar tipos de
+          energia limpa, beneficios, desafios e acoes praticas que qualquer pessoa pode adotar.
+        </p>
+        <ul class="check-list">
+          <li>Conteudo educativo com explicacoes diretas.</li>
+          <li>Imagens e exemplos para facilitar o entendimento.</li>
+          <li>Organizacao por secoes para leitura rapida.</li>
+          <li>Sugestoes de atitudes sustentaveis para escola e casa.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal" id="energias">
+      <div class="container">
+        <h2>Tipos de energia limpa</h2>
+        <p class="section-intro">
+          Clique em uma energia para ver explicacao detalhada, pontos importantes e fotos demonstrativas.
+        </p>
+
+        <div class="cards energy-grid energy-tabs" role="tablist" aria-label="Tipos de energia limpa">
+          <button
+            class="energy-tab card is-active"
+            id="tab-solar"
+            role="tab"
+            aria-selected="true"
+            aria-controls="painel-solar"
+            data-energy-target="solar"
+            type="button"
+          >
+            <span class="energy-tab-title">Solar</span>
+            <span class="energy-tab-desc">Gerada pela luz do sol com paineis fotovoltaicos.</span>
+          </button>
+          <button
+            class="energy-tab card"
+            id="tab-eolica"
+            role="tab"
+            aria-selected="false"
+            aria-controls="painel-eolica"
+            data-energy-target="eolica"
+            type="button"
+          >
+            <span class="energy-tab-title">Eolica</span>
+            <span class="energy-tab-desc">Produzida pela forca dos ventos com turbinas.</span>
+          </button>
+          <button
+            class="energy-tab card"
+            id="tab-hidreletrica"
+            role="tab"
+            aria-selected="false"
+            aria-controls="painel-hidreletrica"
+            data-energy-target="hidreletrica"
+            type="button"
+          >
+            <span class="energy-tab-title">Hidreletrica</span>
+            <span class="energy-tab-desc">Obtida pelo movimento da agua em usinas.</span>
+          </button>
+          <button
+            class="energy-tab card"
+            id="tab-biomassa"
+            role="tab"
+            aria-selected="false"
+            aria-controls="painel-biomassa"
+            data-energy-target="biomassa"
+            type="button"
+          >
+            <span class="energy-tab-title">Biomassa</span>
+            <span class="energy-tab-desc">Gerada com residuos organicos e materia vegetal.</span>
+          </button>
+          <button
+            class="energy-tab card"
+            id="tab-geotermica"
+            role="tab"
+            aria-selected="false"
+            aria-controls="painel-geotermica"
+            data-energy-target="geotermica"
+            type="button"
+          >
+            <span class="energy-tab-title">Geotermica</span>
+            <span class="energy-tab-desc">Usa o calor interno da Terra para gerar energia.</span>
+          </button>
+        </div>
+
+        <div class="energy-panels card">
+          <article
+            class="energy-panel is-active"
+            id="painel-solar"
+            role="tabpanel"
+            aria-labelledby="tab-solar"
+            data-energy-panel="solar"
+          >
+            <h3>Energia solar</h3>
+            <p>
+              A energia solar transforma a luz do sol em eletricidade. Ela pode ser usada em casas, escolas, empresas
+              e propriedades rurais, com baixa emissao de poluentes.
+            </p>
+            <p>
+              Mesmo com investimento inicial, os paineis costumam durar muitos anos e podem diminuir a conta de luz ao
+              longo do tempo.
+            </p>
+            <ul class="energy-points">
+              <li>Fonte renovavel e limpa.</li>
+              <li>Boa opcao para telhados de casas e escolas.</li>
+              <li>Funciona melhor em locais com boa incidencia solar.</li>
+            </ul>
+            <div class="energy-gallery">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=900&q=80"
+                  alt="Usina com paineis solares em grande quantidade"
+                />
+                <figcaption>Usina solar com fileiras de paineis fotovoltaicos.</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=900&q=80"
+                  alt="Casa com paineis solares instalados no telhado"
+                />
+                <figcaption>Exemplo de energia solar aplicada em residencia.</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article
+            class="energy-panel"
+            id="painel-eolica"
+            role="tabpanel"
+            aria-labelledby="tab-eolica"
+            data-energy-panel="eolica"
+            hidden
+          >
+            <h3>Energia eolica</h3>
+            <p>
+              A energia eolica e produzida quando o vento gira as pas das turbinas. Esse movimento aciona geradores e
+              produz eletricidade para cidades e industrias.
+            </p>
+            <p>
+              E uma fonte renovavel importante para reduzir o uso de combustiveis fosseis e diminuir a poluicao.
+            </p>
+            <ul class="energy-points">
+              <li>Aproveita um recurso natural abundante: o vento.</li>
+              <li>Tem baixa emissao de gases de efeito estufa.</li>
+              <li>Requer planejamento para localizacao dos parques.</li>
+            </ul>
+            <div class="energy-gallery">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=900&q=80"
+                  alt="Parque eolico com varias turbinas em area aberta"
+                />
+                <figcaption>Parque eolico em operacao.</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1548337138-e87d889cc369?auto=format&fit=crop&w=900&q=80"
+                  alt="Turbinas eolicas vistas de perto em campo aberto"
+                />
+                <figcaption>Turbinas transformando vento em energia eletrica.</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article
+            class="energy-panel"
+            id="painel-hidreletrica"
+            role="tabpanel"
+            aria-labelledby="tab-hidreletrica"
+            data-energy-panel="hidreletrica"
+            hidden
+          >
+            <h3>Energia hidreletrica</h3>
+            <p>
+              A energia hidreletrica usa a forca da agua para girar turbinas e gerar eletricidade. No Brasil, essa
+              fonte tem papel importante no abastecimento de energia.
+            </p>
+            <p>
+              Apesar de renovavel, obras hidreletricas precisam de estudos ambientais para reduzir impactos em rios,
+              fauna e comunidades.
+            </p>
+            <ul class="energy-points">
+              <li>Grande capacidade de geracao para o sistema eletrico.</li>
+              <li>Aproveita o fluxo de rios e reservatorios.</li>
+              <li>Exige monitoramento ambiental constante.</li>
+            </ul>
+            <div class="energy-gallery">
+              <figure>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Itaipu_Dam_Spillway.jpg"
+                  alt="Vertedouro da usina hidreletrica de Itaipu"
+                />
+                <figcaption>Vertedouro da hidreletrica de Itaipu em operacao.</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Barragem_de_itaipu.jpg"
+                  alt="Barragem da usina hidreletrica de Itaipu"
+                />
+                <figcaption>Barragem hidreletrica com descarga de agua controlada.</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article
+            class="energy-panel"
+            id="painel-biomassa"
+            role="tabpanel"
+            aria-labelledby="tab-biomassa"
+            data-energy-panel="biomassa"
+            hidden
+          >
+            <h3>Energia de biomassa</h3>
+            <p>
+              A biomassa usa residuos organicos, como restos de madeira, bagaco de cana e residuos agricolas, para
+              produzir calor, eletricidade ou biocombustiveis.
+            </p>
+            <p>
+              Ela ajuda a aproveitar materiais que seriam descartados, podendo gerar energia perto do local de
+              producao desses residuos.
+            </p>
+            <ul class="energy-points">
+              <li>Transforma residuos em fonte energetica util.</li>
+              <li>Pode fortalecer economia local e rural.</li>
+              <li>Precisa de controle de emissao e manejo adequado.</li>
+            </ul>
+            <div class="energy-gallery">
+              <figure>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Sandakan_Sabah_IOI-Sandakan-Biomass-Power-Plant-02.jpg"
+                  alt="Usina real de biomassa com estrutura industrial"
+                />
+                <figcaption>Usina de biomassa em operacao para geracao de energia eletrica.</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/75/Biomassekraftwerk_mit_Lager.jpg"
+                  alt="Central de biomassa com area de armazenamento de material"
+                />
+                <figcaption>Infraestrutura de biomassa com estoque de combustivel renovavel.</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article
+            class="energy-panel"
+            id="painel-geotermica"
+            role="tabpanel"
+            aria-labelledby="tab-geotermica"
+            data-energy-panel="geotermica"
+            hidden
+          >
+            <h3>Energia geotermica</h3>
+            <p>
+              A energia geotermica aproveita o calor interno da Terra para aquecimento e producao de eletricidade.
+              Essa fonte pode funcionar de forma constante em regioes com potencial geotermico.
+            </p>
+            <p>
+              E pouco comum no Brasil, mas e bastante estudada no mundo por ser uma opcao limpa e estavel.
+            </p>
+            <ul class="energy-points">
+              <li>Baixa emissao de carbono na operacao.</li>
+              <li>Geracao continua em areas adequadas.</li>
+              <li>Depende de condicoes geologicas especificas.</li>
+            </ul>
+            <div class="energy-gallery">
+              <figure>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/af/Hellisheidi_Geothermal_Power_Station.jpg"
+                  alt="Usina geotermica real com vapor na Islandia"
+                />
+                <figcaption>Usina geotermica com liberacao de vapor em operacao real.</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Wairakei_Geothermal_Power_Station-5838.jpg"
+                  alt="Estacao geotermica com tubulacoes e sistema de vapor"
+                />
+                <figcaption>Tubulacoes e sistema industrial de energia geotermica.</figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="galeria">
+      <div class="container">
+        <h2>Galeria informativa</h2>
+        <p class="section-intro">Mais exemplos visuais de energias renovaveis em diferentes contextos.</p>
+        <div class="gallery">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=900&q=80"
+              alt="Usina com paineis solares em fileiras"
+            />
+            <figcaption>Usina solar com grande area de paineis.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=900&q=80"
+              alt="Parque eolico com varias turbinas"
+            />
+            <figcaption>Parque eolico para geracao de eletricidade.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Itaipu_Dam_Spillway.jpg"
+              alt="Vertedouro de usina hidreletrica"
+            />
+            <figcaption>Vertedouro hidreletrico em operacao.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=900&q=80"
+              alt="Casa com paineis solares instalados no telhado"
+            />
+            <figcaption>Energia solar no uso residencial.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1548337138-e87d889cc369?auto=format&fit=crop&w=900&q=80"
+              alt="Turbinas eolicas em area de campo aberto"
+            />
+            <figcaption>Turbinas eolicas em funcionamento.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Barragem_de_itaipu.jpg"
+              alt="Barragem hidreletrica com grande reservatorio"
+            />
+            <figcaption>Reservatorio e estrutura de barragem para geracao de energia.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Sandakan_Sabah_IOI-Sandakan-Biomass-Power-Plant-02.jpg"
+              alt="Usina industrial de biomassa"
+            />
+            <figcaption>Planta industrial de biomassa para geracao de energia.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/75/Biomassekraftwerk_mit_Lager.jpg"
+              alt="Unidade de biomassa com area de armazenamento"
+            />
+            <figcaption>Central de biomassa com armazenamento de combustivel.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/af/Hellisheidi_Geothermal_Power_Station.jpg"
+              alt="Usina geotermica com emissao de vapor"
+            />
+            <figcaption>Usina geotermica real em area de atividade termica.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Wairakei_Geothermal_Power_Station-5838.jpg"
+              alt="Estacao geotermica com tubulacoes"
+            />
+            <figcaption>Infraestrutura geotermica com rede de tubulacoes e vapor.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80"
+              alt="Painel solar com turbinas eolicas no fundo"
+            />
+            <figcaption>Combinacao de fontes renovaveis no mesmo local.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="acoes">
+      <div class="container">
+        <h2>Como contribuir no dia a dia</h2>
+        <ol class="tips">
+          <li>Apagar luzes e desligar aparelhos quando nao estiver usando.</li>
+          <li>Priorizar lampadas LED e equipamentos mais eficientes.</li>
+          <li>Evitar desperdicio de energia em casa e na escola.</li>
+          <li>Compartilhar informacoes sobre energias renovaveis.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="conclusao">
+      <div class="container">
+        <h2>Conclusao do projeto</h2>
+        <p class="section-intro">
+          Nossa proposta tem potencial para amenizar o problema da desinformacao sobre energia limpa. Ao explicar com
+          linguagem simples, exemplos visuais e comparacoes praticas, o site ajuda estudantes e comunidade a entender
+          melhor a ODS 7 e tomar decisoes mais sustentaveis no dia a dia.
+        </p>
+        <div class="cards two">
+          <article class="card">
+            <h3>Impacto esperado</h3>
+            <p>
+              A solucao nao resolve completamente o desafio energetico global, mas contribui para mitigar o problema ao
+              ampliar conhecimento e consciencia sobre energias renovaveis.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Proximo passo do grupo</h3>
+            <p>
+              Evoluir o prototipo com formulario de feedback e divulgacao em ambiente escolar para medir alcance e
+              melhorar continuamente o conteudo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal" id="integrantes">
+      <div class="container">
+        <h2>Integrantes do grupo</h2>
+        <ul class="members">
+          <li>Caique dos Santos Souza</li>
+          <li>Joao Marcelo Oliveira Barbosa</li>
+          <li>Joao Victor Passos Batista de Oliveira</li>
+          <li>Levi Davi Tude Silva</li>
+          <li>Brenner Gabriel Franca Costa</li>
+          <li>Carlos Vinicius do Vale Fernandes</li>
+          <li>Gabriel Borges Roque Bastos</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Trabalho ODS HTML - ODS 7 | Pagina estatica em HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <button id="to-top" class="to-top" aria-label="Voltar ao topo">↑</button>
+</body>
+</html>
