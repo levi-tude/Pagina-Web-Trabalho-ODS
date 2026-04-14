@@ -1,6 +1,6 @@
 # Trabalho ODS HTML
 
-Pagina estatica desenvolvida para trabalho escolar sobre os Objetivos de Desenvolvimento Sustent?vel da ONU, com foco na **ODS 7 - Energia Limpa e Acessivel**.
+P?gina estatica desenvolvida para trabalho escolar sobre os Objetivos de Desenvolvimento Sustent?vel da ONU, com foco na **ODS 7 - Energia Limpa e Acess?vel**.
 
 ## Integrantes
 
@@ -14,7 +14,7 @@ Pagina estatica desenvolvida para trabalho escolar sobre os Objetivos de Desenvo
 
 ## Tema
 
-ODS 7 - Energia Limpa e Acessivel.
+ODS 7 - Energia Limpa e Acess?vel.
 
 ## Objetivo
 
@@ -22,7 +22,7 @@ Explicar de forma simples a import?ncia do acesso universal a energia limpa, seg
 
 ## Problema
 
-Ainda existe desinformacao sobre fontes renovaveis e dificuldade de acesso a tecnologias energ?ticas em algumas regi?es.
+Ainda existe desinforma??o sobre fontes renovaveis e dificuldade de acesso a tecnologias energ?ticas em algumas regi?es.
 
 ## P?blico-alvo
 
@@ -30,7 +30,7 @@ Estudantes, fam?lias, pequenos empreendedores e comunidade local.
 
 ## Solu??o inicial proposta
 
-Criar uma pagina informativa estatica com conteudo educativo, imagens, explica??o dos tipos de energia limpa e dicas praticas para o dia a dia.
+Criar uma p?gina informativa estatica com conte?do educativo, imagens, explica??o dos tipos de energia limpa e dicas pr?ticas para o dia a dia.
 
 ## Tecnologias
 
@@ -42,22 +42,22 @@ Criar uma pagina informativa estatica com conteudo educativo, imagens, explica??
 
 Basta abrir o arquivo `index.html` no navegador.
 
-## Estrutura de paginas
+## Estrutura de p?ginas
 
-O prototipo possui 3 paginas principais, conforme solicitado no trabalho:
+O prot?tipo possui 3 p?ginas principais, conforme solicitado no trabalho:
 
-- `index.html` - Pagina principal (vis?o geral, energias, galeria e integrantes)
-- `sobre.html` - Tema, problema, objetivo, solucao, publico-alvo e conclusao
-- `integrantes.html` - Integrantes e identificacao da equipe \(Unijorge / Ciencia da Computacao / Desenvolvimento Web\)
+- `index.html` - P?gina principal (vis?o geral, energias, galeria e integrantes)
+- `sobre.html` - Tema, problema, objetivo, solu??o, p?blico-alvo e conclus?o
+- `integrantes.html` - Integrantes e identifica??o da equipe \(Unijorge / Ciencia da Computa??o / Desenvolvimento Web\)
 
 ## Hospedagem (GitHub Pages)
 
-Para deixar o projeto publico na internet:
+Para deixar o projeto p?blico na internet:
 
 1. Entre no reposit?rio no GitHub.
 2. Clique em **Settings**.
 3. Abra **Pages** no menu lateral.
 4. Em **Source**, selecione a branch usada pelo projeto e a pasta **/** (root).
-5. Salve e aguarde a gera??o do link publico.
+5. Salve e aguarde a gera??o do link p?blico.
 
 Depois disso, o site poder? ser acessado pelo link do GitHub Pages.
